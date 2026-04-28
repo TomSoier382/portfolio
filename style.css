@@ -1,0 +1,133 @@
+body {
+  background-color: #fff0f3;
+  color: #444;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffcad4, #cdb4db);
+  color: #333;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+a {
+  position: relative;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+.hero h1 {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.project {
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.hero {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
+
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.portfolio-img {
+  width: 14rem;
+  height: auto;
+  border-radius: 15%;
+}
+
+.portfolio-img-horizontal{
+  height: 14rem;
+  width: auto;
+  border-radius: 15%
+
+}
+.portfolio-img-vertical{
+ height: 14rem;
+ width: auto;
+ border-radius: 15%
+
+}
+.portfolio-img-nonvertical{
+  height: 14rem;
+  width: auto;
+  border-radius: 15%
+
+}
+.portfolio-img-nonhorizontal {
+  height:14rem;
+  width:auto;
+  border-radius:15%;
+}
+.portfolio-img-subhorizontal{
+  height: 14rem;
+  width:auto;
+  border-radius:15%;
+
+}
+body { 
+  font-family: 'Poppins', sans-serif;
+}     
+.hover-transition {
+  transform: scale(1.05);
+}
+
+.headline {
+  margin-left: 45px;
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.project-card img {
+  transition: transform 0.2s ease;
+}
+
+.hover-pop {
+  transition: transform 0.5s ease-in;
+}
+
+.hover-pop:hover{
+    transform: scale(1.05);
+}
