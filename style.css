@@ -16,10 +16,12 @@ section {
   padding: 25px;
   margin: 30px;
 }
+
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
 }
+
 a {
   position: relative;
   transition: 0.3s;
@@ -43,6 +45,7 @@ a::after {
 a:hover::after {
   width: 100%;
 }
+
 .hero h1 {
   animation: float 3s ease-in-out infinite;
 }
@@ -52,6 +55,7 @@ a:hover::after {
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
+
 .project {
   transition: 0.3s;
 }
@@ -60,10 +64,10 @@ a:hover::after {
   transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
+
 .hero {
   background: linear-gradient(135deg, #a8edea, #fed6e3);
 }
-
 
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
@@ -99,6 +103,7 @@ a:hover::after {
   height:14rem;
   width:auto;
   border-radius:15%;
+
 }
 .portfolio-img-subhorizontal{
   height: 14rem;
@@ -106,6 +111,13 @@ a:hover::after {
   border-radius:15%;
 
 }
+
+.portfolio-img-standard {
+  height: 14rem;
+  width:auto;
+  border-radius:15%;
+}
+
 body { 
   font-family: 'Poppins', sans-serif;
 }     
